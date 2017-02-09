@@ -28,10 +28,11 @@ Using
 Create component instance
 ```php
 $downloader = new \greeflas\tools\ImageDownloader([
-    'class' => \greeflas\tools\ImageValidator::class
+    'class' => \greeflas\tools\validators\ImageValidator::class
 ]);
 ```
 in array you should specify the validator class. It used for validation of downloaded files.
+If you don't want run validation, you can use a `\greeflas\tools\validators\FakeValidator::class`.
 
 Then you should call method for downloading
 ```php
