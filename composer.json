@@ -1,6 +1,7 @@
 {
-    "name": "greeflas/tools",
-    "description": "Tool for image downloading",
+    "name": "greeflas/php-image-downloader",
+    "description": "Component for downloading images by URL",
+    "keywords": ["php", "image", "downloader", "download"],
     "type": "library",
     "license": "BSD-3-Clause",
     "authors": [
@@ -9,8 +10,10 @@
             "email": "vldmr.kuprienko@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*"
+    },
     "autoload": {
         "psr-4": {
             "greeflas\\tools\\": "src"
