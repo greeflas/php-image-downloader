@@ -84,7 +84,8 @@ class ImageDownloader
         $this->_fileManager->open($fullPath, 'wb');
         $this->_curl->setParams([
             CURLOPT_FILE => $this->_fileManager->getInstance(),
-            CURLOPT_HEADER => 0
+            CURLOPT_HEADER => 0,
+            CURLOPT_FOLLOWLOCATION => true
         ]);
 
         // download file
